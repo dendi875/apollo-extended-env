@@ -1,0 +1,14 @@
+logging:
+  path: ./log
+
+server:
+  port: 8051
+  tomcat:
+    accesslog:
+      directory: ./access
+
+spring:
+  application:
+    name: apollo-extended-env
+  profiles:
+    active: docker
